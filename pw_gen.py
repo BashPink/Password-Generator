@@ -12,10 +12,10 @@ import string
 import random
 
 # First word list
-words_1 = "blue teal spot feel drag work sudo snow soda nope goth heat goat arch ouch free lock luck pick pond corn cube fire wind pink rune push posh grey zeal jazz kill join"
-word_list_1 = words_1.split()
-rand_word_1 = random.choices(word_list_1)
-rand_word_str_1 = " ".join(rand_word_1)
+word_dictionary = "blue teal spot feel drag work sudo snow soda nope goth heat goat arch ouch free lock luck pick pond corn cube fire wind pink rune push posh grey zeal jazz kill join"
+word_list = word_dictionary.split()  
+rand_word = random.choices(word_list)  
+rand_word_str = " ".join(rand_word)   
 
 # Second word list
 words_2 = "First Split Crash Grown Throw Enter Flame Water Earth Trash Green Violet Cloud Rhino Tiger Dread Death Third Egypt Claim Grass Goose Moose"
@@ -37,6 +37,6 @@ rand_cha_str = " ".join(rand_cha)
 
 
 
-print(f"Your password is: {rand_word_str_1}{rand_word_str_2}{rand_int_str}{rand_cha_str}")
+print(f"Your password is: {rand_word_str}{rand_word_str_2}{rand_int_str}{rand_cha_str}")
 time.sleep(2)
 print("Your new password will not be saved or displayed after the program is closed. 
